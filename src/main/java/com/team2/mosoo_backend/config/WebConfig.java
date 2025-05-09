@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    private static final String DEVELOP_FRONT_ADDRESS = "http://localhost:3000";
+    private static final String DEVELOP_FRONT_ADDRESS = "https://mo-soo.netlify.app";
 
     @Value("${DEPLOY_FRONT_URL}")
     private String DEPLOY_FRONT_URL;
