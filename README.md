@@ -273,3 +273,15 @@ Discord, Notion
 
 </div>
 </details>
+
+## 트러블 슈팅
+
+---
+
+- 채팅 페이지네이션 적용 시 데이터가 많아짐에 따라 조회 시간이 급격히 늘어나는 문제를 QueryDSL 사용하여 no-offset 방식의 페이지네이션 적용하여 해결
+    
+    [https://www.notion.so/elice-track/f9d9f01482254f1ca791f3e25164c235](https://www.notion.so/QueryDSL-no-offset-f9d9f01482254f1ca791f3e25164c235?pvs=21)
+    
+- 일반 로그인은 마이 페이지가 정상적으로 출력이 되지만, 구글 로그인은 마이 페이지가 출력되지 않는 문제를 토큰 발급하는 부분을 수정하여 해결
+    
+    [https://www.notion.so/elice-track/9446563fe4b645b99774811f321d9f75](https://www.notion.so/9446563fe4b645b99774811f321d9f75?pvs=21)
