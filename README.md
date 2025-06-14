@@ -280,8 +280,8 @@ Discord, Notion
 
 - 채팅 페이지네이션 적용 시 데이터가 많아짐에 따라 조회 시간이 급격히 늘어나는 문제를 QueryDSL 사용하여 no-offset 방식의 페이지네이션 적용하여 해결
     
-    [https://www.notion.so/elice-track/f9d9f01482254f1ca791f3e25164c235](https://www.notion.so/QueryDSL-no-offset-f9d9f01482254f1ca791f3e25164c235?pvs=21)
+    [no-offset 방식의 페이지네이션 적용하여 해결](https://github.com/A540/Elice_Project3_MosooBack/wiki/QueryDSL%EB%A1%9C-no%E2%80%90offset-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98-%EA%B5%AC%ED%98%84%ED%95%98%EC%97%AC-%EC%A1%B0%ED%9A%8C-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0)
     
 - 일반 로그인은 마이 페이지가 정상적으로 출력이 되지만, 구글 로그인은 마이 페이지가 출력되지 않는 문제를 토큰 발급하는 부분을 수정하여 해결
     
-    [https://www.notion.so/elice-track/9446563fe4b645b99774811f321d9f75](https://www.notion.so/9446563fe4b645b99774811f321d9f75?pvs=21)
+    [문제를 토큰 발급하는 부분을 수정하여 해결](https://github.com/A540/Elice_Project3_MosooBack/wiki/%EA%B5%AC%EA%B8%80-%EC%97%B0%EB%8F%99-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%9C%A0%EC%A0%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%88%EC%9D%BC%EC%B9%98-%EB%AC%B8)
