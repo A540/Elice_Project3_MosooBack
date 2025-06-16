@@ -28,7 +28,6 @@ import java.io.IOException;
 import com.siot.IamportRestClient.request.CancelData;
 import java.math.BigDecimal;
 
-@Data
 @Service
 @RequiredArgsConstructor
 public class PaymentService {
