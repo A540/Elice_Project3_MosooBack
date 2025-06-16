@@ -277,6 +277,10 @@ Discord, Notion
 
 - [mosoo api 명세서](https://mo-soo.duckdns.org/swagger-ui/index.html)
 
+## 기능 명세서
+
+- [mosoo 기능 명세서](https://github.com/A540/Elice_Project3_MosooBack/wiki/Mosoo-%EA%B8%B0%EB%8A%A5-%EB%AA%85%EC%84%B8%EC%84%9C)
+
 ## 트러블 슈팅
 
 ---
