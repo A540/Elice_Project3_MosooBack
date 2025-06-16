@@ -42,7 +42,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // CSRF 보호 비활성화
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/**", "/**").permitAll() // 공개 API
+                        .requestMatchers("/api/**", "/**", "/h2-console/**").permitAll() // 공개 API
                         .anyRequest().authenticated() // 그 외 요청은 인증 필요
                 )
                 .cors(cors -> cors.configurationSource(corsConfigurationSource())) // CORS 설정
@@ -66,7 +66,7 @@ public class SecurityConfig {
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
         return (web) -> web.ignoring()
-                // .requestMatchers(toH2Console())
+//                 .requestMatchers(toH2Console())
                 .requestMatchers("/static/")
                 .requestMatchers("/");
     }
@@ -80,7 +80,8 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
 
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:3000", deployFrontUrl)); // 허용할 출처
+        // 오리진 허용
+        configuration.setAllowedOrigins(List.of("https://mo-soo.netlify.app", "http://localhost:3000", deployFrontUrl)); // 허용할 출처
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH")); // 허용할 메서드
         configuration.setAllowCredentials(true); // 인증 정보 포함 여부
         configuration.setAllowedHeaders(List.of("*")); // 허용할 헤더
