@@ -134,7 +134,9 @@ Discord, Notion
 <summary>프로젝트 구조</summary>
 <div markdown="1">       
 
+## API 명세서(Swagger)
 
+- [mosoo api 명세서](https://mo-soo.duckdns.org/swagger-ui/index.html)
 
 ---
 
