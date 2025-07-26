@@ -3,11 +3,11 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - master
+      - develop
   pull_request:
     types: [closed]
     branches:
-      - master
+      - develop
 
 jobs:
   deploy:
