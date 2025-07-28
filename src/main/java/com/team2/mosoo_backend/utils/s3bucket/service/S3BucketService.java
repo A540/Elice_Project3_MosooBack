@@ -2,7 +2,9 @@ package com.team2.mosoo_backend.utils.s3bucket.service;
 
 
 import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.CannedAccessControlList;
 import com.amazonaws.services.s3.model.ObjectMetadata;
+import com.amazonaws.services.s3.model.PutObjectRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -30,7 +32,11 @@ public class S3BucketService {
         metadata.setContentType(file.getContentType());
         metadata.setContentLength(file.getSize());
 
-        amazonS3Client.putObject(bucket, fileName, file.getInputStream(), metadata);
+        // ACL 정책 명시(public 접근 허용)
+        PutObjectRequest putObjectRequest = new PutObjectRequest(bucket, fileName, file.getInputStream(), metadata)
+                .withCannedAcl(CannedAccessControlList.PublicRead);
+
+        amazonS3Client.putObject(putObjectRequest);
 
         return amazonS3Client.getUrl(bucket, fileName).toString();
     }
